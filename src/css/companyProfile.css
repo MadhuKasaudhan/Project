@@ -1,0 +1,269 @@
+:root {
+  --cp5-ink: #111318;
+  --cp5-muted: #6b7280;
+  --cp5-border: #e2e4e9;
+  --cp5-bg: #ececec;
+  --cp5-card: #ffffff;
+  --cp5-Black: #080400;
+  --cp5-chip-bg: #eef0f3;
+  --cp5-pill-border: #d8dae0;
+}
+
+/* Outer */
+.cp5-outer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(to bottom, #1a1a1a 0%, #ececec 140px);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px 60px;
+  color: var(--cp5-ink);
+}
+
+/* Card */
+.cp5-card {
+  width: 100%;
+  max-width: 460px;
+  background: var(--cp5-card);
+  border-radius: 6px;
+  padding: 26px 32px 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+}
+.cp5-meta-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--cp5-muted);
+  margin-bottom: 10px;
+}
+.cp5-final { text-decoration: underline; }
+.cp5-progress-bar {
+  height: 3px;
+  width: 100%;
+  background: var(--cp5-ink);
+  border-radius: 2px;
+  margin-bottom: 18px;
+}
+.cp5-title {
+  text-align: center;
+  font-size: 19px;
+  margin: 0 0 6px;
+}
+.cp5-subtitle {
+  text-align: center;
+  color: var(--cp5-orange);
+  font-size: 12px;
+  margin: 0 0 20px;
+}
+
+/* Logo upload */
+.cp5-photo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.cp5-photo-upload {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  display: block;
+}
+.cp5-photo-placeholder {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  background: #ececee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #b7b9bf;
+}
+.cp5-photo-preview {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.cp5-photo-camera {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  background: var(--cp5-ink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #fff;
+}
+.cp5-photo-label {
+  margin-top: 7px;
+  font-size: 11.5px;
+  color: var(--cp5-orange);
+}
+
+/* Layout helpers */
+.cp5-row {
+  display: flex;
+  gap: 16px;
+}
+.cp5-half {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Sections */
+.cp5-section { margin-bottom: 18px; }
+.cp5-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--cp5-orange);
+}
+
+.cp5-section input[type="text"],
+.cp5-section input[type="url"],
+.cp5-section textarea,
+.cp5-section select {
+  width: 100%;
+  font-size: 13px;
+  padding: 9px 12px;
+  border: 1px solid var(--cp5-border);
+  border-radius: 5px;
+  font-family: inherit;
+  color: var(--cp5-orange);
+  background: #fff;
+}
+.cp5-section input[type="text"]::placeholder,
+.cp5-section input[type="url"]::placeholder,
+.cp5-section textarea::placeholder { color: #b8bac2; }
+.cp5-section select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M0 0l5 6 5-6z' fill='%23d97706'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  cursor: pointer;
+}
+.cp5-section textarea { resize: vertical; min-height: 60px; color: var(--cp5-ink); }
+.cp5-section input:focus,
+.cp5-section textarea:focus,
+.cp5-section select:focus {
+  outline: 2px solid #c9cdd6;
+  outline-offset: 1px;
+}
+
+/* Chips (hiring categories / student skills) */
+.cp5-skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.cp5-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--cp5-chip-bg);
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 12.5px;
+  color: var(--cp5-ink);
+}
+.cp5-chip button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--cp5-muted);
+  padding: 0;
+}
+.cp5-chip button:hover { color: var(--cp5-ink); }
+
+/* Link fields with icon */
+.cp5-link-field { position: relative; }
+.cp5-link-field input { padding-left: 30px; }
+.cp5-link-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: var(--cp5-muted);
+}
+
+/* Opportunity checkbox grid */
+.cp5-checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.cp5-checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--cp5-border);
+  border-radius: 5px;
+  padding: 9px 10px;
+  font-size: 12.5px;
+  cursor: pointer;
+  background: #fff;
+  color: var(--cp5-ink);
+}
+.cp5-checkbox-item:hover { border-color: #c7cad1; }
+.cp5-checkbox-item input { margin: 0; }
+.cp5-checkbox-item.cp5-checked {
+  border-color: var(--cp5-ink);
+  background: #f3f3f4;
+}
+
+/* Buttons */
+.cp5-save-btn {
+  width: 100%;
+  background: var(--cp5-ink);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.cp5-save-btn:hover { background: #000; }
+.cp5-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  color: var(--cp5-ink);
+  border-radius: 50%;
+  font-size: 10px;
+}
+.cp5-skip-link {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 12.5px;
+  color: var(--cp5-ink);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .cp5-card { padding: 20px 18px 24px; }
+  .cp5-row { flex-direction: column; gap: 0; }
+  .cp5-checkbox-grid { grid-template-columns: 1fr 1fr; }
+}
