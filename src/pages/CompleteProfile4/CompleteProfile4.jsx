@@ -214,10 +214,11 @@ export default function CompleteProfile3() {
             <div className="cp3-section cp3-half">
               <div className="cp3-label">Portfolio Website</div>
               <div className="cp3-link-field">
-                <span className="cp3-link-icon">&#127760;</span>
+                <span className="cp3-link-icon"></span>
                 <input
                   type="url"
                   value={portfolio}
+                  
                   onChange={(e) => setPortfolio(e.target.value)}
                   placeholder="https://..."
                 />

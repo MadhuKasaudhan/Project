@@ -6,6 +6,9 @@ import CompleteProfile3 from './pages/CompleteProfile3/CompleteProfile3';
 import CompleteProfile4 from './pages/CompleteProfile4/CompleteProfile4';
 import CompleteProfile5 from './pages/CompleteProfile5/CompleteProfile5';
 import CompanyProfile from './pages/CompanyProfile/CompanyProfile';
+import MertorDashBoard from './pages/MentorDashBoard/MentorDashBoard';
+import MertorshipRequest from './pages/MentorshipRequest/MentorshipRequest';
+import MertorChats from './pages/MentorChats/MentorChats';
 import VerificationProgress from './pages/VerificationProgress/VerificationProgress';
 import VerifyEmail from './pages/VerifyEmail/VerifyEmail';
 import Welcome from './pages/Welcome/Welcome';
@@ -24,6 +27,9 @@ function App() {
       <Route path="/complete-profile4" element={<CompleteProfile4 />} />
        <Route path="/complete-profile5" element={<CompleteProfile5 />} />
         <Route path="/company-profile" element={<CompanyProfile />} />
+        <Route path="/MentorDashBoard" element={<MertorDashBoard />} />
+        <Route path="/MentorshipRequest" element={<MertorshipRequest />} />
+        <Route path="/MentorChats" element={<MertorChats />} />
 
     </Routes>
   );

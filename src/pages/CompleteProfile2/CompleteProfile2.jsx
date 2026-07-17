@@ -162,7 +162,7 @@ export default function CompleteProfile() {
           <div className="cp-section">
             <div className="cp-label">Professional Links</div>
             <div className="cp-link-field">
-              <span className="cp-link-icon">🔗</span>
+              <span className="cp-link-icon"></span>
               <input
                 type="url"
                 placeholder="LinkedIn URL"
@@ -171,7 +171,7 @@ export default function CompleteProfile() {
               />
             </div>
             <div className="cp-link-field">
-              <span className="cp-link-icon">🌐</span>
+              <span className="cp-link-icon"></span>
               <input
                 type="url"
                 placeholder="Portfolio / Website (Optional)"
@@ -180,7 +180,7 @@ export default function CompleteProfile() {
               />
             </div>
             <div className="cp-link-field">
-              <span className="cp-link-icon">💻</span>
+              <span className="cp-link-icon"></span>
               <input
                 type="url"
                 placeholder="GitHub (Optional)"

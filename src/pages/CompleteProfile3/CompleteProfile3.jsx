@@ -188,7 +188,7 @@ export default function CompleteProfile2() {
             <div className="cp2-section cp2-half">
               <div className="cp2-label">Portfolio/Website (Optional)</div>
               <div className="cp2-link-field">
-                <span className="cp2-link-icon">&#127760;</span>
+                <span className="cp2-link-icon"></span>
                 <input
                   type="url"
                   value={portfolio}
