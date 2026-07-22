@@ -9,6 +9,11 @@ import CompanyProfile from './pages/CompanyProfile/CompanyProfile';
 import MertorDashBoard from './pages/MentorDashBoard/MentorDashBoard';
 import MertorshipRequest from './pages/MentorshipRequest/MentorshipRequest';
 import MertorChats from './pages/MentorChats/MentorChats';
+import MertorProfile from './pages/MentorProfile/MentorProfile';
+import Mentormeetings from './pages/Mentormeetings/Mentormeetings';
+import Pitchdeck from './pages/Pitchdeck/Pitchdeck';
+import Incomingpitchdecks from './pages/Incomingpitchdecks/Incomingpitchdecks';
+import Investordashboard from './pages/Investordashboard/Investordashboard';
 import VerificationProgress from './pages/VerificationProgress/VerificationProgress';
 import VerifyEmail from './pages/VerifyEmail/VerifyEmail';
 import Welcome from './pages/Welcome/Welcome';
@@ -30,7 +35,11 @@ function App() {
         <Route path="/MentorDashBoard" element={<MertorDashBoard />} />
         <Route path="/MentorshipRequest" element={<MertorshipRequest />} />
         <Route path="/MentorChats" element={<MertorChats />} />
-
+         <Route path="/MentorProfile" element={<MertorProfile />} />
+        <Route path="/Mentormeetings" element={<Mentormeetings />} />
+        <Route path="/Investordashboard" element={<Investordashboard/>} />
+        <Route path="/Pitchdeck" element={<Pitchdeck />} />
+        <Route path="/Incomingpitchdecks" element={<Incomingpitchdecks />} />
     </Routes>
   );
 }
