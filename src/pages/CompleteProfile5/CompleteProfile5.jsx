@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../css/completeProfile5.css";
+import "./completeProfile5.css";
 
 const ORG_TYPES = [
   "University Affiliated",

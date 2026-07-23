@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../../css/completeProfile2.css';
+import './completeProfile2.css';
 
 const ALL_INTERESTS = ["AI", "SaaS", "FinTech", "HealthTech", "EdTech", "Sustainability"];
 const ALL_GOALS = [

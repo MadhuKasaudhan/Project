@@ -8,7 +8,7 @@ import ProfileUploader from '../../components/ProfileUploader/ProfileUploader';
 import SkillChip from '../../components/SkillChip/SkillChip';
 import TextArea from '../../components/TextArea/TextArea';
 import CheckboxCard from '../../components/CheckboxCard/CheckboxCard';
-import '../../css/completeProfile.css';
+import './completeProfile.css';
 
 const initialSkills = ['Fintech', 'Leadership'];
 const interests = ['SaaS', 'EdTech', 'Sustainability', 'Web3', 'HealthTech', 'FinTech'];

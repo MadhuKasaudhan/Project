@@ -5,6 +5,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import StatusBadge from '../../components/StatusBadge/StatusBadge';
 import Timeline from '../../components/Timeline/Timeline';
 import InfoCard from '../../components/InfoCard/InfoCard';
+import './verification.css';
 
 const steps = [
   { title: 'Profile', status: 'done' },

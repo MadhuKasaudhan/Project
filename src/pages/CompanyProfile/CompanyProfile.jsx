@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../css/companyProfile.css";
+import "./companyProfile.css";
 
 const INDUSTRIES = [
   "Technology",

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../css/completeProfile3.css";
+import "./completeProfile3.css";
 
 const INDUSTRIES = ["SaaS", "FinTech", "Sustainability", "HealthTech", "DeepTech", "Web3"];
 const EXPERIENCE_RANGES = ["0-2 years", "3-5 years", "6-10 years", "10+ years"];

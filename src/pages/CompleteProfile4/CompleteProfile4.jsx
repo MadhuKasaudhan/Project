@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../css/completeProfile4.css";
+import "./completeProfile4.css";
 
 const INVESTMENT_STAGES = ["Idea", "Pre-Seed", "Seed", "Series A+"];
 

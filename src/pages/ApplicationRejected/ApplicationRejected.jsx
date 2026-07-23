@@ -2,6 +2,7 @@ import { AlertCircle } from 'lucide-react';
 import Button from '../../components/Button/Button';
 import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
+import "./styles.css";
 
 function ApplicationRejected() {
   return (

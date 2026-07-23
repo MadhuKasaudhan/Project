@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../css/mentorshipRequest.css";
+import "./mentorshipRequest.css";
 
 const NAV_ITEMS = [
   { label: "Dashboard", icon: "\u25A6" },
